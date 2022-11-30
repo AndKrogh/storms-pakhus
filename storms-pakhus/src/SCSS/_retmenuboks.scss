@@ -1,0 +1,696 @@
+@import "../Variables/breakpoints";
+
+#titel {
+    background-color: $darkGrayColor;
+
+    @include xs {
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+        color: red;
+    }
+
+    @include sm {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+        color: blue;
+    }
+
+    @include md {
+        font-size: 0.9rem;
+        margin-bottom: 5px;
+        letter-spacing: 1px;
+        color: peru;
+    }
+
+    @include lg {
+        font-size: 1.1rem;
+        letter-spacing: 2px;
+        color: purple;
+    }
+
+    @include xl {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        color: orange;
+    }
+}
+
+#header-box {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+/* Overskrift på bokse */
+    .top-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        padding: 10px 50px 10px 50px;
+
+        h1 {
+           font-size: 1.2rem;
+            color: black;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+
+            @include xs {
+                font-size: 0.5rem;
+                letter-spacing: 1px;
+                color: red;
+            }
+
+            @include sm {
+                font-size: 0.7rem;
+                margin-bottom: 5px;
+                letter-spacing: 1px;
+                color: blue;
+            }
+
+            @include md {
+                font-size: 0.8rem;
+                margin-bottom: 5px;
+                letter-spacing: 1px;
+                color: peru;
+            }
+
+            @include lg {
+                font-size: 1rem;
+                letter-spacing: 2px;
+                color: purple;
+            }
+
+            @include xl {
+                font-size: 1.1rem;
+                letter-spacing: 2px;
+                color: orange;
+            }
+        }
+
+        @include xs {
+            height: 30px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        @include sm {
+            height: 40px;
+            padding: 10px 20px 10px 20px;
+        }
+
+        @include md {
+            height: 45px;
+            padding: 10px 30px 10px 30px;
+        }
+
+        @include lg {
+            height: 50px;
+            padding: 10px 40px 10px 40px;
+        }
+
+        @include xl {
+            height: 50px;
+            padding: 10px 50px 10px 50px;
+        }
+
+                   
+    }
+
+/* Boks til om menuerne */
+    .box-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        p{
+            font-size: 1rem;
+
+            @include xs {
+                font-size: 0.4rem;
+                letter-spacing: 1px;
+                color: red;
+            }
+
+            @include sm {
+                font-size: 0.5rem;
+                letter-spacing: 1px;
+                color: blue;
+            }
+
+            @include md {
+                font-size: 0.6rem;
+                letter-spacing: 1px;
+                color: peru;
+            }
+
+            @include lg {
+                font-size: 0.7rem;
+                color: purple;
+            }
+
+            @include xl {
+                font-size: 0.9rem;
+                color: orange;
+            }
+        }
+
+
+        .container {
+            width: 50px;
+
+        }
+
+        .dropdown-arrow {
+            height: 0;
+            width: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid #333;
+            position: relative;
+            top: 26px;
+            left: 100px;
+        }
+
+        .user-id:hover .dropdown-arrow {
+           top: 26px;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #333;
+            border-top: 10px solid transparent;
+        }
+
+        .dropdown-menu {
+            list-style-type: none;
+            display: none;
+            background: #555; 
+            background: rgba(33, 33, 33, 0.9);
+        }
+
+        .user-id:hover .dropdown-menu {
+            display: block;
+            position: absolute;
+            top: 100%;
+        }
+
+        .dropdown-menu ul li {
+            list-style-type: none;
+            display: block;
+            height:20px;
+            width: 80px;
+            font-size: 1.1em;
+            line-height: 1.5em;
+            padding: 10px;
+            color: #fff;
+            border-bottom: 2px solid #333;
+        }
+
+        .dropdown-menu ul li:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-menu ul li:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        .edit-arrow-open {
+            cursor: pointer;
+            top: 10px;
+            right: 20px;
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid $blackColor;
+            border-bottom: 2px solid $blackColor;
+            transform: rotate(45deg);
+            position: relative;
+        }
+    
+    }
+
+ 
+
+
+    .box-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+
+
+
+        .inner-box{
+            width: 100%;
+            background-color: $mediumGreenColor;
+            padding: 10px 20px 10px 20px;       
+        }
+
+        .inner-box-dark {
+            width: 100%;
+            background-color: $seperatercolor;
+            padding: 10px 20px 10px 20px;       
+        }
+
+ 
+        .profile {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .profile-img {
+                width: 100%;
+                height: 100%;
+               
+
+            }
+
+            .img1 {
+                height: 100px;
+                width: 100px;
+                object-fit: fill;
+                object-position: center;
+                
+                @include xs {
+                    height: 40px;
+                    width: 40px;
+                }
+
+                @include sm {
+                   height: 50px;
+                    width: 50px;
+                }
+
+                @include md {
+                   height: 60px;
+                    width: 60px;
+                }
+
+                @include lg {
+                    height: 70px;
+                    width: 70px;
+                }
+
+                @include xl {
+                    height: 90px;
+                    width: 90px;
+                }
+            }  
+
+            .name-user {
+                display: flex;
+                flex-direction: column;
+            } 
+
+ 
+        }
+
+        .review {
+            color: $blackColor;
+        }
+    }
+    
+}
+
+/* Scroll  */
+.scroll-bg {
+    background: #548483;
+    width: 70%;
+    margin: 100px auto;
+
+    .titel {
+        background-color: $darkGrayColor;
+    }
+    
+
+    .scroll-div {
+        background: $lightGreyColor ;
+        overflow: hidden;
+        overflow-y: scroll;
+
+        @include xs {
+           height: 200px;
+        }
+
+        @include sm {
+            height: 250px;
+        }
+
+        @include md {
+           height: 300px;
+        }
+
+        @include lg {
+           height: 350px;
+        }
+
+        @include xl {
+           height: 400px;
+        }
+    }
+
+    
+
+    .scroll-object{
+        color:$blackColor;
+        
+    }
+
+    ::-webkit-scrollbar{
+        width: 20px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: $greyColor;
+    }
+
+   
+}
+
+/* Rediger bokse  */
+#inner-box-edit, #inner-box-edit-1, #inner-box-edit-2, #inner-box-edit-3 {
+    background-color: $darkGreenColor;
+    height: 300px;
+    width: 100%;
+    display: none;
+
+      @include xs {
+            font-size: 0.6rem;
+            letter-spacing: 1px;
+            color: red;
+            height: 220px;
+        }
+
+        @include sm {
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            color: blue;
+            height: 240px;
+        }
+
+        @include md {
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+            color: peru;
+            height: 240px;
+        }
+
+        @include lg {
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            color: purple;
+            height: 250px;
+        }
+
+        @include xl {
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            color: orange;
+            height: 300px;
+        }
+
+    .closebtn {
+        float: right;
+    }
+
+    .box-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 110px 10px 40px;
+        padding-top: 10px;
+
+            @include xs {
+                margin: 0px 10px 10px 10px;
+            }
+
+            @include sm {
+                margin: 0px 10px 10px 40px;
+            }
+
+            @include md {
+               margin: 0px 10px 10px 10px;
+            }
+
+            @include lg {
+              margin: 0px 10px 10px 10px;
+            }
+
+            @include xl {
+             margin: 0px 110px 10px 40px;
+            }
+    }
+    
+    .big-text-area {
+        position: static;
+        margin: 20px 20px 20px 20px;
+
+        .txt-area {
+            height: 150px;
+            padding: 10px 30px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+
+            @include xs {
+                width: 30%;
+                height: 110px;
+            }
+
+            @include sm {
+                width: 40%;
+                height: 110px;
+            }
+
+            @include md {
+               width: 60%;
+               height: 113px;
+            }
+
+            @include lg {
+              width: 70%;
+              height: 115px;
+            }
+
+            @include xl {
+             width: 75%;
+             height: 120px;
+            }
+        }
+    }
+
+
+    .input {
+            @include xs {
+                width: 60%;
+                height: 10px;
+            }
+
+            @include sm {
+                width: 40%;
+            }
+
+            @include md {
+                width: 60%;
+            }
+
+            @include lg {
+                width: 80%;
+            }
+
+            @include xl {
+                width: 90%;
+            }
+        }
+
+
+    .box-left-edit {
+        float:right;
+        height: 50px;
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        flex-wrap: wrap;
+
+        @include xs {
+            width: 90px;
+        }
+
+        @include sm {
+            width: 100px;
+        }
+
+        @include md {
+            width: 100px;
+        }
+
+        @include lg {
+            width: 110px;
+        }
+
+        @include xl {
+            width: 120px;
+        }
+
+
+        .savebtn {
+            margin-bottom: 20px;
+            background-color: $orangeColor;
+            border: none;
+            padding: 10px 43px;
+            font-size: 15px;
+            color: $whiteColor;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 3px;
+            cursor: pointer;
+
+            @include xs {
+                font-size: 0.5rem;
+                padding: 10px 23px;
+            }
+
+            @include sm {
+                font-size: 0.6rem;
+                padding: 10px 26px;
+            }
+
+            @include md {
+                font-size: 0.7rem;
+                padding: 10px 38px;
+            }
+
+            @include lg {
+                 font-size: 0.8rem;
+                padding: 10px 43px;
+            }
+
+            @include xl {
+                font-size: 0.8rem;
+                padding: 10px 43px;
+            }
+        }
+
+        .acceptbtn {
+            margin-bottom: 20px;
+            background-color: $orangeColor;
+            border: none;
+            padding: 10px 20px;
+            font-size: 15px;
+            color: $whiteColor;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 3px;
+            cursor: pointer;
+
+            @include xs {
+                font-size: 0.5rem;
+                padding: 10px 10px;
+            }
+
+            @include sm {
+                font-size: 0.6rem;
+                padding: 10px 10.2px;
+            }
+
+            @include md {
+                font-size: 0.7rem;
+                padding: 10px 20px;
+            }
+
+            @include lg {
+                 font-size: 0.8rem;
+                padding: 10px 23px;
+            }
+
+            @include xl {
+                font-size: 0.8rem;
+                padding: 10px 23px;
+            }
+        }
+
+        .denybtn {
+            margin-bottom: 20px;
+            background-color: $darkGrayColor;
+            border: none;
+            padding: 10px 38px;
+            font-size: 15px;
+            color: $whiteColor;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-radius: 3px;
+            cursor: pointer;
+
+             @include xs {
+                font-size: 0.5rem;
+                padding: 10px 20px;
+            }
+            @include sm {
+                font-size: 0.6rem;
+                padding: 10px 22px;
+            }
+
+            @include md {
+                font-size: 0.7rem;
+                padding: 10px 33px;
+            }
+
+            @include lg {
+                 font-size: 0.8rem;
+                padding: 10px 39px;
+            }
+
+            @include xl {
+                font-size: 0.8rem;
+                padding: 10px 39px;
+            }
+        }
+    }
+
+    .h3 {
+        font-size: 1rem;
+
+        @include xs {
+            font-size: 0.6rem;
+            letter-spacing: 1px;
+            color: red;
+        }
+
+        @include sm {
+            font-size: 0.8rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+            color: blue;
+        }
+
+        @include md {
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+            color: peru;
+        }
+
+        @include lg {
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            color: purple;
+        }
+
+        @include xl {
+            font-size: 1.3rem;
+            letter-spacing: 2px;
+            color: orange;
+        }
+    }
+    
+}

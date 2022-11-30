@@ -1,0 +1,236 @@
+.lines {
+    width: 900px;
+    height: 2px;
+    border: none;
+    background-color: #1060AF;
+    position: absolute;
+    left: 50%;
+    top: 500px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.lines-box {
+    width: 120px;
+    height: 4px;
+    border: none;
+    background-color: #eaf5ff;;
+    position: absolute;
+    left: 50%;
+    top: 500px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.menu-beskrivelse {
+    position: absolute;
+    width: 500px;
+    text-align: center;
+    margin: 0;
+    left: 50%;
+    top: 380px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+}
+
+
+.show-menu-button {
+    position: absolute;
+    z-index: 3;
+	background-color: #1060AF;
+	border: none;
+	padding: 4px 8px;
+	font-size: 10px;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	border-radius: 3px;
+	cursor: pointer;
+    margin: 0;
+    left: 50%;
+    top: 500px;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);    
+}
+   .content-menu{
+    .content{
+        width: 100%;
+        background-color: #eaf5ff;
+        height: 2205px;
+        z-index: -2;
+        position: relative;
+    }
+
+    .top-banner{
+        width: 100%;
+        height: 200px; 
+    }
+
+    .banner-img{
+        width: 100%;
+        height: 100%;
+        background: url(~@/assets/Images/Gyros-bod.jpg) no-repeat;
+        filter: brightness(40%);
+        background-position: 0 18%;
+        background-size: cover;
+    }
+
+    .flexbox{
+        display: flex;
+    }
+
+    .logo{
+        width: 100%;
+        max-width: 758px;
+        height: 150px;
+        margin: auto;
+        transform: translateY(-80px);
+        background-color: #fff;
+    }
+
+    .box-shadow{
+        box-shadow: 3px 11px 70px -34px rgba(33,33,33,0.72);
+    }
+
+    .menu{
+        width: 100%;
+        max-width: 1250px;
+        padding: 400px 0 0 0;
+        margin: auto;
+        display: none;
+    }
+
+    .menu1, .menu2, .menu3{
+        max-width: 100%;
+        max-height: 500px;
+        height: auto;
+        margin-bottom: 75px;
+    }
+
+    .image{
+        width: 100%;
+        max-width: 250px;
+        height: 350px;
+        max-height: 350px;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .image2{
+        width: 100%;
+        max-width: 250px;
+        height: 350px;
+        max-height: 350px;
+        z-index: 1;
+        margin-left: auto;
+        margin-right: 0;
+        overflow: hidden;
+    }
+
+    .center-img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+        min-height: 350px;
+    }
+
+    .center-logo{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: cover;
+        width: auto;
+        height: 150px;
+    }
+
+    .card{
+        background-color: #fff;
+        width: 80%;
+        margin-left: 8%;
+        height: auto;
+        min-height: 350px;
+        transform: translateY(-200px);
+        position: relative;
+        z-index: -1;
+    }
+
+    .card2{
+        background-color: #fff;
+        width: 80%;
+        margin-left: auto;
+        margin-right: 8%;
+        height: auto;
+        min-height: 350px;
+        transform: translateY(-200px);
+        position: relative;
+        z-index: -1;
+    }
+
+    .dish-name,.dish-name2{
+        width: 80%;
+    }
+
+    .dish-price, .dish-price2{
+        width: 20%;
+    }
+
+    .dish-name{
+        padding-left: 225px;
+    }
+
+    .dish-price2{
+        padding-right: 225px;
+    }
+
+    .dish-price{
+        padding-right: 50px;
+    }
+
+    .dish-name2{
+        padding-left: 50px;
+    }
+
+    h1{
+        text-align: left;
+        color: #1060AF;
+        font-size: 50px;
+    }
+
+    h2{
+        text-align: right;
+        color: #1060AF;
+        font-size: 50px;
+    }
+
+    p{
+        text-align: left;
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        padding-top: 5%;
+    }
+
+    .dish-description{
+        margin-top: 5%;
+        padding-left: 225px;
+        padding-right: 50px;
+        width: 50%;
+    }
+
+    .dish-description2{
+        margin-top: 5%;
+        padding-right: 225px;
+        padding-left: 50px;
+        width: 50%;
+    }
+}

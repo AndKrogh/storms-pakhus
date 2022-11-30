@@ -1,0 +1,160 @@
+.login_background{
+    padding: 17% 37% 16% 37%;
+    background-image: url(../src/assets/Images/stormspakhus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+
+    .login_form{
+        background-color: rgba(54, 84, 83, 0.9);
+        padding: 20px;
+        border-radius: 5px;
+        margin: auto;
+    }
+    h1{
+        text-align: center;
+        color: #fff;
+    }
+    label{
+        color: #fff;
+    }
+
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        background-color: #DAECE2;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type=email], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        background-color: #DAECE2;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    input[type=password], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        background-color: #DAECE2;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100%;
+        background-color: #DD641B;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 5px;
+        border: 1px solid #DD641B;
+        cursor: pointer;
+    }
+    
+    button :hover {
+        padding: 14px 20px;
+        margin: 8px 0;
+        background-color: #fff;
+        border: 1px solid #DD641B;
+        border-radius: 5px;
+        color: #DD641B;
+    }
+
+    div {
+        border-radius: 5px;
+    }
+}
+.signup_background{
+    padding: 11% 37% 10% 37%;
+    background-image: url(../src/assets/Images/stormspakhus.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+.signup_form{
+    background-color: rgba(54, 84, 83, 0.9);
+    padding: 20px;
+    border-radius: 5px;}
+    margin: auto;
+
+    h1{
+        text-align: center;
+        color: #fff;
+    }
+    label{
+        color: #fff;
+    }
+
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        background-color: #DAECE2;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+    
+      input[type=email], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        background-color: #DAECE2;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      input[type=password], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        background-color: #DAECE2;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+    
+      button {
+        width: 100%;
+        background-color: #DD641B;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 5px;
+        border: 1px solid #DD641B;
+        cursor: pointer;
+      }
+      
+      button :hover {
+        padding: 14px 20px;
+        margin: 8px 0;
+        background-color: white;
+        border: 1px solid #DD641B;
+        border-radius: 5px;
+        color: #DD641B;
+
+      }
+      
+      div {
+        border-radius: 5px;
+      }
+}
